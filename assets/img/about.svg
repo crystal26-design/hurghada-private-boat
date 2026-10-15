@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFD6A5"/><stop offset="1" stop-color="#F4A261"/></linearGradient>
+<filter id="b" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="38"/></filter>
+</defs>
+<rect width="800" height="600" fill="url(#bg)"/>
+<circle cx="576" cy="593" r="147" fill="#E76F51" opacity="0.32" filter="url(#b)"/>
+<circle cx="275" cy="290" r="188" fill="#E9C46A" opacity="0.32" filter="url(#b)"/>
+<circle cx="640" cy="143" r="177" fill="#FFB4A2" opacity="0.32" filter="url(#b)"/>
+<circle cx="584" cy="512" r="112" fill="#E76F51" opacity="0.32" filter="url(#b)"/>
+<circle cx="524" cy="328" r="128" fill="#E9C46A" opacity="0.32" filter="url(#b)"/>
+<text x="400" y="300" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="48" font-weight="700" fill="#1f2d3d" text-anchor="middle" dominant-baseline="middle" opacity="0.82">关于我们</text>
+<text x="400" y="346" font-family="sans-serif" font-size="18" fill="#1f2d3d" text-anchor="middle" opacity="0.5" letter-spacing="3">PLACEHOLDER</text>
+</svg>

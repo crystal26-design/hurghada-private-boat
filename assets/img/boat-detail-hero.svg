@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#BDE0FE"/><stop offset="1" stop-color="#A2D2FF"/></linearGradient>
+<filter id="b" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="38"/></filter>
+</defs>
+<rect width="1600" height="900" fill="url(#bg)"/>
+<circle cx="757" cy="774" r="172" fill="#CDB4DB" opacity="0.32" filter="url(#b)"/>
+<circle cx="1392" cy="584" r="188" fill="#FFC8DD" opacity="0.32" filter="url(#b)"/>
+<circle cx="615" cy="240" r="188" fill="#BDE0FE" opacity="0.32" filter="url(#b)"/>
+<circle cx="693" cy="344" r="196" fill="#CDB4DB" opacity="0.32" filter="url(#b)"/>
+<circle cx="327" cy="345" r="127" fill="#FFC8DD" opacity="0.32" filter="url(#b)"/>
+<text x="800" y="450" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="72" font-weight="700" fill="#1f2d3d" text-anchor="middle" dominant-baseline="middle" opacity="0.82">单船详情</text>
+<text x="800" y="518" font-family="sans-serif" font-size="27" fill="#1f2d3d" text-anchor="middle" opacity="0.5" letter-spacing="3">PLACEHOLDER</text>
+</svg>

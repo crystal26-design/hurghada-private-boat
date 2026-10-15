@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="260" height="56" viewBox="0 0 260 56">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#A8DADC"/><stop offset="1" stop-color="#457B9D"/></linearGradient>
+<filter id="b" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="38"/></filter>
+</defs>
+<rect width="260" height="56" fill="url(#bg)"/>
+<circle cx="40" cy="34" r="14" fill="#1D3557" opacity="0.32" filter="url(#b)"/>
+<circle cx="200" cy="46" r="6" fill="#E9C46A" opacity="0.32" filter="url(#b)"/>
+<circle cx="195" cy="4" r="7" fill="#F4A261" opacity="0.32" filter="url(#b)"/>
+<circle cx="192" cy="53" r="16" fill="#1D3557" opacity="0.32" filter="url(#b)"/>
+<circle cx="107" cy="5" r="11" fill="#E9C46A" opacity="0.32" filter="url(#b)"/>
+<text x="130" y="28" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="26" font-weight="700" fill="#1f2d3d" text-anchor="middle" dominant-baseline="middle" opacity="0.82">赫尔格达 · 私人出海</text>
+</svg>

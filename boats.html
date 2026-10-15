@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">
+        
+        <span class="brand-name" data-en="Red Sea Voyages" data-fr="Croisières Mer Rouge" data-de="Rotes Meer Fahrten">Red Sea Voyages</span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html" data-en="Home" data-fr="Accueil" data-de="Startseite">Home</a>
+        <a href="boats.html" class="active" data-en="Our Boats" data-fr="Nos bateaux" data-de="Unsere Boote">Our Boats</a>
+        <a href="tips.html" data-en="Red Sea Travel Tips" data-fr="Conseils Mer Rouge" data-de="Rotes-Meer-Reisetipps">Red Sea Travel Tips</a>
+        <a href="disclaimer.html" data-en="Disclaimer" data-fr="Avertissement" data-de="Hinweise">Disclaimer</a>
+        <a href="contact.html" data-en="Enquiry &amp; Booking" data-fr="Demande de Réservation" data-de="Anfrage &amp; Buchung">Enquiry &amp; Booking</a>
+      </nav>
+      <div class="nav-actions">
+        <button type="button" id="langToggle" aria-label="Switch language" style="margin-right:8px;padding:6px 12px;border:1px solid #ccc;border-radius:20px;background:#fff;cursor:pointer;font-weight:600;">EN · FR · DE</button>
+        <a href="https://v2wpsffjpj.coze.site" target="_blank" class="btn btn-primary btn-sm" data-en="Free Consultation" data-fr="Consultation Gratuite" data-de="Kostenlose Beratung">Free Consultation</a>
+
+        <button class="nav-toggle" id="navToggle" aria-label="Open menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- 页头 -->
+  <section class="page-hero">
+    <div class="page-hero-media">
+
+      <div class="container page-hero-inner">
+        <div class="breadcrumb"><a href="index.html" data-en="Home" data-fr="Accueil" data-de="Startseite">Home</a><span>/</span><span data-en="Our Boats" data-fr="Nos bateaux" data-de="Unsere Boote">Our Boats</span></div>
+        <h1 data-en="Our boats" data-fr="Nos bateaux" data-de="Unsere Boote">Our boats</h1>
+        <p data-en="A wide range of private boats — we'll match the right one to your group size, budget and plans." data-fr="Une large gamme de bateaux privés — nous vous trouvons celui qui correspond à votre effectif, votre budget et vos envies." data-de="Eine große Auswahl an privaten Booten — wir finden das passende für Ihre Gruppengröße, Ihr Budget und Ihre Pläne.">A wide range of private boats — we'll match the right one to your group size, budget and plans.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 分类标签（视觉示意） -->
+  <section class="section" style="padding-bottom:0">
+    <div class="container">
+      <div style="display:flex;flex-wrap:wrap;gap:10px;justify-content:center" class="reveal">
+        <span class="btn btn-ghost btn-sm" data-en="All" data-fr="Tout" data-de="Alle">All</span>
+        <span class="btn btn-ghost btn-sm" data-en="Twin-Deck Yacht No.1" data-fr="Yacht à Double Pont n°1" data-de="Zweideck-Yacht Nr. 1">Twin-Deck Yacht No.1</span>
+        <span class="btn btn-ghost btn-sm" data-en="Twin-Deck Yacht No.2" data-fr="Yacht à Double Pont n°2" data-de="Zweideck-Yacht Nr. 2">Twin-Deck Yacht No.2</span>
+        <span class="btn btn-ghost btn-sm" data-en="Single-Deck Cruiser" data-fr="Petit Yacht à Simple Pont" data-de="Kleine Eindeck-Yacht">Single-Deck Cruiser</span>
+        <span class="btn btn-ghost btn-sm" data-en="Classic Glass-Bottom Boat" data-fr="Bateau Classique à Fond de Verre" data-de="Klassisches Glasbodenboot">Classic Glass-Bottom Boat</span>
+        <span class="btn btn-ghost btn-sm" data-en="Luxury Yacht No.1" data-fr="Yacht de Luxe n°1" data-de="Luxusyacht Nr. 1">Luxury Yacht No.1</span>
+        <span class="btn btn-ghost btn-sm" data-en="Luxury Yacht No.2" data-fr="Yacht de Luxe n°2" data-de="Luxusyacht Nr. 2">Luxury Yacht No.2</span>
+        <span class="btn btn-ghost btn-sm" data-en="Luxury Speedboat" data-fr="Bateau Rapide de Luxe" data-de="Luxus-Schnellboot">Luxury Speedboat</span>
+        <span class="btn btn-ghost btn-sm" data-en="Mid-Size Speedboat" data-fr="Bateau Rapide de Taille Moyenne" data-de="Mittleres Schnellboot">Mid-Size Speedboat</span>
+        <span class="btn btn-ghost btn-sm" data-en="Grand Yacht" data-fr="Grand Yacht" data-de="Große Yacht">Grand Yacht</span>
+        <span class="btn btn-ghost btn-sm" data-en="Pirate Ship" data-fr="Bateau Pirate" data-de="Piratenschiff">Pirate Ship</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 船型网格 -->
+  <section class="section">
+    <div class="container">
+      <div class="grid grid-3">
+        <a class="boat-card reveal" href="boat-detail.html">
+          <div class="boat-media"><span class="boat-tag" data-en="Family Outing" data-fr="Sortie en Famille" data-de="Familienausflug">Family Outing</span><img src="assets/img/boat-1.jpg" alt="Twin-Deck Yacht No.1" /></div>
+          <div class="boat-body">
+            <h3 data-en="Twin-Deck Yacht No.1" data-fr="Yacht à Double Pont n°1" data-de="Zweideck-Yacht Nr. 1">Twin-Deck Yacht No.1</h3>
+            <div class="boat-meta"><span data-en="⛵ 9 guests" data-fr="⛵ 9 passagers" data-de="⛵ 9 Gäste">⛵ 9 guests</span><span data-en="📏 15m" data-fr="📏 15 m" data-de="📏 15 m">📏 15m</span><span data-en="⏱ Full day" data-fr="⏱ Journée entière" data-de="⏱ Ganztägig">⏱ Full day</span></div>
+            <p style="color:var(--ink-soft);font-size:14px" data-en="Twin decks, sunbathing cushions and a private cabin — ideal for family days out and small gatherings of friends." data-fr="Deux ponts, matelas de bain de soleil et cabine privée — idéal pour les sorties en famille ou entre amis." data-de="Zwei Decks, Sonnenbadematten und eine eigene Kabine — ideal für Familienausflüge und kleine Freundesrunden.">Twin decks, sunbathing cushions and a private cabin — ideal for family days out and small gatherings of friends.</p>
+            <div class="boat-foot"><span class="boat-price" data-en='From USD <b>380</b> per boat' data-fr='À partir de <b>380</b> USD par bateau' data-de='Ab <b>380</b> USD pro Boot'>From USD <b>380</b> per boat</span><span class="boat-link" data-en="View details →" data-fr="Voir les détails →" data-de="Details ansehen →">View details →</span></div>
+          </div>
+        </a>
+        <a class="boat-card reveal" href="boat-detail-02.html">
+          <div class="boat-media"><span class="boat-tag" data-en="Friends' Trip" data-fr="Sortie entre Amis" data-de="Ausflug mit Freunden">Friends' Trip</span><img src="assets/img/boat-2.jpg" alt="Twin-Deck Yacht No.2" /></div>
+          <div class="boat-body">
+            <h3 data-en="Twin-Deck Yacht No.2" data-fr="Yacht à Double Pont n°2" data-de="Zweideck-Yacht Nr. 2">Twin-Deck Yacht No.2</h3>
+            <div class="boat-meta"><span data-en="🎣 8 guests" data-fr="🎣 8 passagers" data-de="🎣 8 Gäste">🎣 8 guests</span><span data-en="📏 11m" data-fr="📏 11 m" data-de="📏 11 m">📏 11m</span><span data-en="⏱ Full day" data-fr="⏱ Journée entière" data-de="⏱ Ganztägig">⏱ Full day</span></div>
+            <p style="color:var(--ink-soft);font-size:14px" data-en="Twin decks, private cabin and plenty of shaded space on board." data-fr="Deux ponts, cabine privée et de nombreux espaces ombragés à bord." data-de="Zwei Decks, eigene Kabine und viel schattiger Platz an Bord.">Twin decks, private cabin and plenty of shaded space on board.</p>
+            <div class="boat-foot"><span class="boat-price" data-en='From USD <b>290</b> per boat' data-fr='À partir de <b>290</b> USD par bateau' data-de='Ab <b>290</b> USD pro Boot'>From USD <b>290</b> per boat</span><span class="boat-link" data-en="View details →" data-fr="Voir les détails →" data-de="Details ansehen →">View details →</span></div>
+          </div>
+        </a>
+        <a class="boat-card reveal" href="boat-detail-03.html">
+          <div class="boat-media"><span class="boat-tag" data-en="Best Value" data-fr="Meilleur Rapport Qualité-Prix" data-de="Bester Preis-Leistungs-Wert">Best Value</span><img src="assets/img/boat-3.jpg" alt="Single-Deck Cruiser" /></div>
+          <div class="boat-body">
+            <h3 data-en="Single-Deck Cruiser" data-fr="Petit Yacht à Simple Pont" data-de="Kleine Eindeck-Yacht">Single-Deck Cruiser</h3>
+            <div class="boat-meta"><span data-en="🌊 8 guests" data-fr="🌊 8 passagers" data-de="🌊 8 Gäste">🌊 8 guests</span><span data-en="📏 11m" data-fr="📏 11 m" data-de="📏 11 m">📏 11m</span><span data-en="⏱ 4h / full day" data-fr="⏱ 4 h / journée entière" data-de="⏱ 4 Std. / ganztägig">⏱ 4h / full day</span></div>
+            <p style="color:var(--ink-soft);font-size:14px" data-en="Calm and restful, great value — best enjoyed by smaller groups." data-fr="Calme et ressourçant, excellent rapport qualité-prix — parfait pour les petits groupes." data-de="Ruhig und erholsam, ausgezeichnetes Preis-Leistungs-Verhältnis — am besten für kleinere Gruppen.">Calm and restful, great value — best enjoyed by smaller groups.</p>
+            <div class="boat-foot"><span class="boat-price" data-en='From USD <b>130</b> per boat' data-fr='À partir de <b>130</b> USD par bateau' data-de='Ab <b>130</b> USD pro Boot'>From USD <b>130</b> per boat</span><span class="boat-link" data-en="View details →" data-fr="Voir les détails →" data-de="Details ansehen →">View details →</span></div>
+          </div>
+        </a>
+        <a class="boat-card reveal" href="boat-detail-04.html">
+          <div class="boat-media"><span class="boat-tag" data-en="Fishing &amp; Fish Viewing" data-fr="Pêche &amp; Observation des Poissons" data-de="Angeln &amp; Fischbeobachtung">Fishing &amp; Fish Viewing</span><img src="assets/img/boat-4.jpg" alt="Classic Glass-Bottom Boat" /></div>
+          <div class="boat-body">
+            <h3 data-en="Classic Glass-Bottom Boat" data-fr="Bateau Classique à Fond de Verre" data-de="Klassisches Glasbodenboot">Classic Glass-Bottom Boat</h3>
+            <div class="boat-meta"><span data-en="🤿 8 guests" data-fr="🤿 8 passagers" data-de="🤿 8 Gäste">🤿 8 guests</span><span data-en="📏 12m" data-fr="📏 12 m" data-de="📏 12 m">📏 12m</span><span data-en="⏱ 4h / full day" data-fr="⏱ 4 h / journée entière" data-de="⏱ 4 Std. / ganztägig">⏱ 4h / full day</span></div>
+            <p style="color:var(--ink-soft);font-size:14px" data-en="Sea fishing and snorkelling on deck — watch the fish through the glass bottom below." data-fr="Pêche et snorkeling sur le pont — admirez les poissons à travers le fond de verre." data-de="Hochseeangeln und Schnorcheln an Deck — beobachten Sie die Fische durch den Glasboden.">Sea fishing and snorkelling on deck — watch the fish through the glass bottom below.</p>
+            <div class="boat-foot"><span class="boat-price" data-en='From USD <b>140</b> per boat' data-fr='À partir de <b>140</b> USD par bateau' data-de='Ab <b>140</b> USD pro Boot'>From USD <b>140</b> per boat</span><span class="boat-link" data-en="View details →" data-fr="Voir les détails →" data-de="Details ansehen →">View details →</span></div>
+          </div>
+        </a>
+        <a class="boat-card reveal" href="boat-detail-05.html">
+          <div class="boat-media"><span class="boat-tag" data-en="Guest Favourite" data-fr="Le Plus Apprécié" data-de="Gästefavorit">Guest Favourite</span><img src="assets/img/boat-5.jpg" alt="Luxury Yacht No.1" /></div>
+          <div class="boat-body">
+            <h3 data-en="Luxury Yacht No.1" data-fr="Yacht de Luxe n°1" data-de="Luxusyacht Nr. 1">Luxury Yacht No.1</h3>
+            <div class="boat-meta"><span data-en="🌅 17 guests" data-fr="🌅 17 passagers" data-de="🌅 17 Gäste">🌅 17 guests</span><span data-en="📏 18.5m" data-fr="📏 18,5 m" data-de="📏 18,5 m">📏 18.5m</span><span data-en="⏱ Full day / 3h sunset" data-fr="⏱ Journée entière / 3 h au coucher du soleil" data-de="⏱ Ganztägig / 3 Std. Sonnenuntergang">⏱ Full day / 3h sunset</span></div>
+            <p style="color:var(--ink-soft);font-size:14px" data-en="Panoramic deck with sunset viewing spots — the Red Sea at its most breathtaking." data-fr="Pont panoramique avec coins détente face au soleil couchant — la mer Rouge dans toute sa splendeur." data-de="Panoramadeck mit Plätzen für den Sonnenuntergang — das Rote Meer atemberaubend schön.">Panoramic deck with sunset viewing spots — the Red Sea at its most breathtaking.</p>
+            <div class="boat-foot"><span class="boat-price" data-en='From USD <b>290</b> per boat' data-fr='À partir de <b>290</b> USD par bateau' data-de='Ab <b>290</b> USD pro Boot'>From USD <b>290</b> per boat</span><span class="boat-link" data-en="View details →" data-fr="Voir les détails →" data-de="Details ansehen →">View details →</span></div>
+          </div>
+        </a>
+        <a class="boat-card reveal" href="boat-detail-06.html">
+          <div class="boat-media"><span class="boat-tag" data-en="Family Friendly" data-fr="Adapté aux Familles" data-de="Familienfreundlich">Family Friendly</span><img src="assets/img/boat-6.jpg" alt="Family Leisure Boat" /></div>
+          <div class="boat-body">
+            <h3 data-en="Luxury Yacht No.2" data-fr="Yacht de Luxe n°2" data-de="Luxusyacht Nr. 2">Luxury Yacht No.2</h3>
+            <div class="boat-meta"><span data-en="👨‍👩‍👧 10 guests" data-fr="👨‍👩‍👧 10 passagers" data-de="👨‍👩‍👧 10 Gäste">👨‍👩‍👧 10 guests</span><span data-en="📏 18m" data-fr="📏 18 m" data-de="📏 18 m">📏 18m</span><span data-en="⏱ Full day" data-fr="⏱ Journée entière" data-de="⏱ Ganztägig">⏱ Full day</span></div>
+            <p style="color:var(--ink-soft);font-size:14px" data-en="Spacious saloon and private cabins — diving can be added on request." data-fr="Salon spacieux et cabines privées — plongée possible sur demande." data-de="Geräumiger Salon und eigene Kabinen — Tauchen auf Anfrage möglich.">Spacious saloon and private cabins — diving can be added on request.</p>
+            <div class="boat-foot"><span class="boat-price" data-en='From USD <b>450</b> per boat' data-fr='À partir de <b>450</b> USD par bateau' data-de='Ab <b>450</b> USD pro Boot'>From USD <b>450</b> per boat</span><span class="boat-link" data-en="View details →" data-fr="Voir les détails →" data-de="Details ansehen →">View details →</span></div>
+          </div>
+        </a>
+<a class="boat-card reveal" href="boat-detail-07.html">
+          <div class="boat-media"><span class="boat-tag" data-en="Speed &amp; Thrill" data-fr="Vitesse &amp; Frissons" data-de="Speed &amp; Nervenkitzel">Speed &amp; Thrill</span><img src="assets/img/boat-7.jpg" alt="Luxury Speedboat" /></div>
+          <div class="boat-body">
+            <h3 data-en="Luxury Speedboat" data-fr="Bateau Rapide de Luxe" data-de="Luxus-Schnellboot">Luxury Speedboat</h3>
+            <div class="boat-meta"><span data-en="👨‍👩‍👧 10 guests" data-fr="👨‍👩‍👧 10 passagers" data-de="👨‍👩‍👧 10 Gäste">👨‍👩‍👧 10 guests</span><span data-en="📏 11m" data-fr="📏 11 m" data-de="📏 11 m">📏 11m</span><span data-en="⏱ Half day" data-fr="⏱ Demi-journée" data-de="⏱ Halbtägig">⏱ Half day</span></div>
+            <p style="color:var(--ink-soft);font-size:14px" data-en="An Instagram-favourite look, twin 250HP engines — pure adrenaline across the Red Sea." data-fr="Un look très photogénique, deux moteurs de 250 CV — sensations fortes garanties sur la mer Rouge." data-de="Ein echter Hingucker, zwei 250-PS-Motoren — pures Adrenalin auf dem Roten Meer.">An Instagram-favourite look, twin 250HP engines — pure adrenaline across the Red Sea.</p>
+            <div class="boat-foot"><span class="boat-price" data-en='From USD <b>250</b> per boat' data-fr='À partir de <b>250</b> USD par bateau' data-de='Ab <b>250</b> USD pro Boot'>From USD <b>250</b> per boat</span><span class="boat-link" data-en="View details →" data-fr="Voir les détails →" data-de="Details ansehen →">View details →</span></div>
+          </div>
+        </a>
+<a class="boat-card reveal" href="boat-detail-08.html">
+          <div class="boat-media"><span class="boat-tag" data-en="Dolphin Buddy" data-fr="Compagnon Dauphin" data-de="Delfinbegleiter">Dolphin Buddy</span><img src="assets/img/boat-8.jpg" alt="Mid-Size Speedboat" /></div>
+          <div class="boat-body">
+            <h3 data-en="Mid-Size Speedboat" data-fr="Bateau Rapide de Taille Moyenne" data-de="Mittleres Schnellboot">Mid-Size Speedboat</h3>
+            <div class="boat-meta"><span data-en="👨‍👩‍👧 5 guests" data-fr="👨‍👩‍👧 5 passagers" data-de="👨‍👩‍👧 5 Gäste">👨‍👩‍👧 5 guests</span><span data-en="📏 8m" data-fr="📏 8 m" data-de="📏 8 m">📏 8m</span><span data-en="⏱ Half day" data-fr="⏱ Demi-journée" data-de="⏱ Halbtägig">⏱ Half day</span></div>
+            <p style="color:var(--ink-soft);font-size:14px" data-en="Compact and nimble — quick, agile fun on the water." data-fr="Compact et agile — rapide et vif sur l'eau." data-de="Kompakt und wendig — schnell und flink auf dem Wasser.">Compact and nimble — quick, agile fun on the water.</p>
+            <div class="boat-foot"><span class="boat-price" data-en='From USD <b>160</b> per boat' data-fr='À partir de <b>160</b> USD par bateau' data-de='Ab <b>160</b> USD pro Boot'>From USD <b>160</b> per boat</span><span class="boat-link" data-en="View details →" data-fr="Voir les détails →" data-de="Details ansehen →">View details →</span></div>
+          </div>
+        </a>
+<a class="boat-card reveal" href="boat-detail-09.html">
+          <div class="boat-media"><span class="boat-tag" data-en="Large Groups" data-fr="Grands Groupes" data-de="Große Gruppen">Large Groups</span><img src="assets/img/boat-9.jpg" alt="Grand Yacht" /></div>
+          <div class="boat-body">
+            <h3 data-en="Grand Yacht" data-fr="Grand Yacht" data-de="Große Yacht">Grand Yacht</h3>
+            <div class="boat-meta"><span data-en="👨‍👩‍👧 18 guests" data-fr="👨‍👩‍👧 18 passagers" data-de="👨‍👩‍👧 18 Gäste">👨‍👩‍👧 18 guests</span><span data-en="📏 22m" data-fr="📏 22 m" data-de="📏 22 m">📏 22m</span><span data-en="⏱ Full day" data-fr="⏱ Journée entière" data-de="⏱ Ganztägig">⏱ Full day</span></div>
+            <p style="color:var(--ink-soft);font-size:14px" data-en="Generous deck space — made for bigger parties." data-fr="Pont très spacieux — conçu pour les grands groupes." data-de="Viel Platz an Deck — gemacht für größere Runden.">Generous deck space — made for bigger parties.</p>
+            <div class="boat-foot"><span class="boat-price" data-en='From USD <b>450</b> per boat' data-fr='À partir de <b>450</b> USD par bateau' data-de='Ab <b>450</b> USD pro Boot'>From USD <b>450</b> per boat</span><span class="boat-link" data-en="View details →" data-fr="Voir les détails →" data-de="Details ansehen →">View details →</span></div>
+          </div>
+        </a>
+<a class="boat-card reveal" href="boat-detail-10.html">
+          <div class="boat-media"><span class="boat-tag" data-en="Signature Boat" data-fr="Bateau Signature" data-de="Besonderes Boot">Signature Boat</span><img src="assets/img/boat-10.jpg" alt="Pirate Ship" /></div>
+          <div class="boat-body">
+            <h3 data-en="Pirate Ship" data-fr="Bateau Pirate" data-de="Piratenschiff">Pirate Ship</h3>
+            <div class="boat-meta"><span data-en="👨‍👩‍👧 20 guests" data-fr="👨‍👩‍👧 20 passagers" data-de="👨‍👩‍👧 20 Gäste">👨‍👩‍👧 20 guests</span><span data-en="📏 25m" data-fr="📏 25 m" data-de="📏 25 m">📏 25m</span><span data-en="⏱ Full day" data-fr="⏱ Journée entière" data-de="⏱ Ganztägig">⏱ Full day</span></div>
+            <p style="color:var(--ink-soft);font-size:14px" data-en="One-of-a-kind looks — live out your day as a Red Sea 'pirate'." data-fr="Un design unique — vivez votre journée de « pirate » sur la mer Rouge." data-de="Einzigartiges Design — erleben Sie Ihren Tag als „Pirat" auf dem Roten Meer.">One-of-a-kind looks — live out your day as a Red Sea 'pirate'.</p>
+            <div class="boat-foot"><span class="boat-price" data-en='From USD <b>500</b> per boat' data-fr='À partir de <b>500</b> USD par bateau' data-de='Ab <b>500</b> USD pro Boot'>From USD <b>500</b> per boat</span><span class="boat-link" data-en="View details →" data-fr="Voir les détails →" data-de="Details ansehen →">View details →</span></div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section alt">
+    <div class="container">
+      <div class="cta reveal">
+        <div class="cta-media">
+          <img src="assets/img/cta-bg.jpg" alt="Red Sea charter" />
+          <div class="cta-inner">
+            <h2 data-en="Not Sure Which Boat Suits You?" data-fr="Vous Hésitez sur le Bateau ?" data-de="Nicht Sicher, welches Boot zu Ihnen Passt?">Not Sure Which Boat Suits You?</h2>
+            <p data-en="Tell us your group size and plans — we'll match the right boat and send you a quote." data-fr="Dites-nous votre effectif et vos envies — nous vous trouvons le bateau idéal et vous envoyons un devis." data-de="Nennen Sie uns Ihre Gruppengröße und Ihre Pläne — wir finden das passende Boot und erstellen ein Angebot.">Tell us your group size and plans — we'll match the right boat and send you a quote.</p>
+            <a href="contact.html" class="btn btn-warm" data-en="One-to-One Consultation" data-fr="Conseil Individuel" data-de="Persönliche Beratung">One-to-One Consultation</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="brand-name" data-en="Red Sea Voyages" data-fr="Croisières Mer Rouge" data-de="Rotes Meer Fahrten">Red Sea Voyages</span></a>
+        <p data-en="A private boat charter advisory service in Hurghada, Egypt. We showcase the fleet, advise on itineraries and connect you with quotes — all sailing services are provided by licensed local boat owners." data-fr="Plateforme de conseil pour la location de bateaux privés à Hurghada, en Égypte. Nous présentons la flotte, conseillons sur les itinéraires et transmettons les devis — les sorties en mer sont assurées par des propriétaires locaux agréés." data-de="Beratungsplattform für privaten Bootscharter in Hurghada, Ägypten. Wir präsentieren die Flotte, beraten zu Routen und vermitteln Angebote — alle Fahrten werden von lizenzierten lokalen Booteigentümern durchgeführt.">A private boat charter advisory service in Hurghada, Egypt. We showcase the fleet, advise on itineraries and connect you with quotes — all sailing services are provided by licensed local boat owners.</p>
+      </div>
+      <div class="footer-col"><h4 data-en="Explore" data-fr="Explorer" data-de="Entdecken">Explore</h4><a href="boats.html" data-en="Our Fleet" data-fr="Notre Flotte" data-de="Unsere Flotte">Our Fleet</a><a href="boat-detail.html" data-en="Boat Details" data-fr="Détails du Bateau" data-de="Bootdetails">Boat Details</a><a href="tips.html" data-en="Red Sea Travel Guide" data-fr="Guide Mer Rouge" data-de="Rotes-Meer-Reiseführer">Red Sea Travel Guide</a></div>
+      <div class="footer-col"><h4 data-en="Services" data-fr="Services" data-de="Leistungen">Services</h4><a href="contact.html" data-en="Enquiry &amp; Booking" data-fr="Demande de Réservation" data-de="Anfrage &amp; Buchung">Enquiry &amp; Booking</a><a href="index.html#process" data-en="How It Works" data-fr="Comment Ça Marche" data-de="So Funktioniert Es">How It Works</a><a href="index.html#about" data-en="About Us" data-fr="À Propos" data-de="Über Uns">About Us</a></div>
+      <div class="footer-col"><h4 data-en="Legal" data-fr="Mentions Légales" data-de="Rechtliches">Legal</h4><a href="disclaimer.html" data-en="Disclaimer" data-fr="Avertissement" data-de="Hinweise">Disclaimer</a><a href="disclaimer.html#privacy" data-en="Privacy Notice" data-fr="Confidentialité" data-de="Datenschutz">Privacy Notice</a><a href="contact.html" data-en="Contact Us" data-fr="Nous Contacter" data-de="Kontakt">Contact Us</a></div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span id="year">2026</span> <span data-en="Red Sea Voyages. All rights reserved." data-fr="Croisières Mer Rouge. Tous droits réservés." data-de="Rotes Meer Fahrten. Alle Rechte vorbehalten.">Red Sea Voyages. All rights reserved.</span></p>
+      <p data-en="This website is an information and advisory platform; all quotes are subject to personal confirmation by our team." data-fr="Ce site est une plateforme d'information et de conseil ; tous les devis sont soumis à confirmation par notre équipe." data-de="Diese Website ist eine Informations- und Beratungsplattform; alle Angebote bedürfen der persönlichen Bestätigung durch unser Team.">This website is an information and advisory platform; all quotes are subject to personal confirmation by our team.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    (function () {
+      var btn = document.getElementById('langToggle');
+      if (!btn) return;
+      var langs = ['en', 'fr', 'de'];
+      var idx = 0;
+      function apply(l) {
+        document.documentElement.lang = l;
+        var nodes = document.querySelectorAll('[data-en], [data-fr], [data-de]');
+        for (var i = 0; i < nodes.length; i++) {
+          var el = nodes[i];
+          var v = el.getAttribute('data-' + l);
+          if (v == null) continue;
+          el.innerHTML = v;
+        }
+      }
+      function label() {
+        var cur = langs[idx].toUpperCase();
+        var rest = langs.filter(function (x) { return x !== langs[idx]; })
+                        .map(function (x) { return x.toUpperCase(); });
+        return cur + ' · ' + rest.join(' · ');
+      }
+      btn.addEventListener('click', function () {
+        idx = (idx + 1) % langs.length;
+        apply(langs[idx]);
+        btn.textContent = label();
+      });
+    })();
+  </script>
+
+
+</body>
+</html>

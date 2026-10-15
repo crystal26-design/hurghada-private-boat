@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#B8E0D2"/><stop offset="1" stop-color="#79C4B0"/></linearGradient>
+<filter id="b" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="38"/></filter>
+</defs>
+<rect width="64" height="64" fill="url(#bg)"/>
+<circle cx="8" cy="38" r="15" fill="#3D8361" opacity="0.32" filter="url(#b)"/>
+<circle cx="58" cy="0" r="13" fill="#E9C46A" opacity="0.32" filter="url(#b)"/>
+<circle cx="45" cy="64" r="19" fill="#F4A261" opacity="0.32" filter="url(#b)"/>
+<circle cx="7" cy="27" r="14" fill="#3D8361" opacity="0.32" filter="url(#b)"/>
+<circle cx="50" cy="64" r="17" fill="#E9C46A" opacity="0.32" filter="url(#b)"/>
+<text x="32" y="32" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="26" font-weight="700" fill="#1f2d3d" text-anchor="middle" dominant-baseline="middle" opacity="0.82">H</text>
+</svg>

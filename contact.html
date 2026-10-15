@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">
+       
+        <span class="brand-name" data-en="Red Sea Voyages" data-fr="Croisières Mer Rouge" data-de="Rotes Meer Fahrten">Red Sea Voyages</span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html" data-en="Home" data-fr="Accueil" data-de="Startseite">Home</a>
+        <a href="boats.html" data-en="Our Boats" data-fr="Nos bateaux" data-de="Unsere Boote">Our Boats</a>
+        <a href="tips.html" data-en="Red Sea Tips" data-fr="Conseils Mer Rouge" data-de="Rotes Meer Tipps">Red Sea Tips</a>
+        <a href="disclaimer.html" data-en="Booking Policy" data-fr="Conditions de Réservation" data-de="Buchungsbedingungen">Booking Policy</a>
+        <a href="contact.html" class="active" data-en="Contact & Booking" data-fr="Contact & Réservation" data-de="Kontakt & Buchung">Contact & Booking</a>
+      </nav>
+      <div class="nav-actions">
+        <button type="button" id="langToggle" aria-label="Switch language" style="margin-right:8px;padding:6px 12px;border:1px solid #ccc;border-radius:20px;background:#fff;cursor:pointer;font-weight:600;">EN · FR · DE</button>
+        <a href="https://v2wpsffjpj.coze.site" target="_blank" class="btn btn-primary btn-sm" data-en="Free Enquiry" data-fr="Conseil Gratuit" data-de="Kostenlose Beratung">Free Enquiry</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Open menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="page-hero-media">
+
+      <div class="container page-hero-inner">
+        <div class="breadcrumb"><a href="index.html" data-en="Home" data-fr="Accueil" data-de="Startseite">Home</a><span>/</span><span data-en="Book your boat" data-fr="Réservez votre bateau" data-de="Buchen Sie Ihr Boot">Book your boat</span></div>
+        <h1 data-en="Book your boat" data-fr="Réservez votre bateau" data-de="Buchen Sie Ihr Boot">Book your boat</h1>
+        <p data-en="Send us your trip enquiry and a consultant will double-check the price and availability. Once the deposit is paid, we lock in your date." data-fr="Envoyez-nous votre demande de sortie ; un conseiller revérifiera le prix et les disponibilités. Après règlement de l'acompte, votre date est réservée." data-de="Senden Sie uns Ihre Anfrage — ein Berater prüft Preis und Verfügbarkeit ein zweites Mal. Nach Zahlung der Anzahlung wird Ihr Termin fest gebucht.">Send us your trip enquiry and a consultant will double-check the price and availability. Once the deposit is paid, we lock in your date.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container contact-grid" style="grid-template-columns:1.4fr 1fr;display:grid;gap:40px;align-items:start">
+      <!-- 表单 -->
+      <div class="form-wrap reveal">
+        <div class="form-note">📌 <span data-en="This site is an <b>information and intermediary enquiry platform</b>: the form is used to collect your booking enquiry. <b>Once booked, a deposit will be set up for you (Payment link (PayPal/Visa/Mastercard)), with the balance paid in cash on board.</b> All quotes are subject to a second manual confirmation by a consultant." data-fr="Ce site est une <b>plateforme d'information et d'intermédiation</b> : le formulaire sert à recueillir votre demande de réservation. <b>Une fois la réservation effectuée, un acompte vous sera proposé (Lien de paiement (PayPal/Visa/Mastercard)), le solde étant réglé en espèces à bord.</b> Tous les devis sont soumis à une seconde confirmation manuelle par un conseiller." data-de="Diese Website ist eine <b>Informations- und Vermittlungsplattform</b>: Das Formular dient der Erfassung Ihrer Buchungsanfrage. <b>Nach der Buchung wird für Sie eine Anzahlung hinterlegt (Zahlungslink (PayPal/Visa/Mastercard)), der Restbetrag wird an Bord in bar beglichen.</b> Alle Angebote bedürfen einer zweiten manuellen Bestätigung durch einen Berater.">This site is an <b>information and intermediary enquiry platform</b>: the form is used to collect your booking enquiry. <b>Once booked, a deposit will be set up for you (Payment link (PayPal/Visa/Mastercard), with the balance paid in cash on board.</b> All quotes are subject to a second manual confirmation by a consultant.</span></div>
+        <form id="consultForm" novalidate action="https://formspree.io/f/mbgjnbpg" method="POST">
+
+
+          <div class="field-row">
+            <div class="field">
+              <label for="name" data-en="Your name <span class=&quot;req&quot;>*</span>" data-fr="Votre nom <span class=&quot;req&quot;>*</span>" data-de="Ihr Name <span class=&quot;req&quot;>*</span>">Your name <span class="req">*</span></label>
+              <input id="name" name="name" type="text" data-en-ph="Your name / nickname" data-fr-ph="Votre nom / pseudo" data-de-ph="Ihr Name / Nickname" placeholder="Your name / nickname" required />
+            </div>
+            <div class="field">
+              <label for="contact" data-en="Whatsapp / Email <span class=&quot;req&quot;>*</span>" data-fr="Whatsapp / E-mail <span class=&quot;req&quot;>*</span>" data-de="Whatsapp/ E-Mail <span class=&quot;req&quot;>*</span>">Whatsapp / Email <span class="req">*</span></label>
+              <input id="contact" name="contact" type="text" data-en-ph="How we can send you the quote" data-fr-ph="Comment vous envoyer le devis" data-de-ph="Wie wir Ihnen das Angebot senden können" placeholder="How we can send you the quote" required />
+            </div>
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="date" data-en="Preferred trip date" data-fr="Date de sortie souhaitée" data-de="Wunschdatum für die Tour">Preferred trip date</label>
+              <input id="date" name="date" type="date" />
+            </div>
+            <div class="field">
+              <label for="people" data-en="Number of guests" data-fr="Nombre de personnes" data-de="Anzahl Personen">Number of guests</label>
+              <input id="people" name="people" type="number" min="1" data-en-ph="e.g. 6" data-fr-ph="ex. 6" data-de-ph="z. B. 6" placeholder="e.g. 6" />
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="boat" data-en="Boat you are interested in <span class=&quot;req&quot;>*</span>" data-fr="Bateau souhaité <span class=&quot;req&quot;>*</span>" data-de="Gewünschtes Boot <span class=&quot;req&quot;>*</span>">Boat you are interested in <span class="req">*</span></label>
+            <select id="boat" name="boat" required>
+              <option value="" data-en="Please select" data-fr="Veuillez choisir" data-de="Bitte wählen">Please select</option>
+              <option data-en="Twin-Deck Yacht No.1" data-fr="Yacht à Double Pont n°1" data-de="Doppeldecker-Yacht Nr. 1">Twin-Deck Yacht No.1</option>
+              <option data-en="Twin-Deck Yacht No.2" data-fr="Yacht à Double Pont n°2" data-de="Doppeldecker-Yacht Nr. 2">Twin-Deck Yacht No.2</option>
+              <option data-en="Single-Deck Small Yacht" data-fr="Petit Yacht à Pont Simple" data-de="Kleine Yacht mit Einem Deck">Single-Deck Small Yacht</option>
+              <option data-en="Classic Glass-Bottom Yacht" data-fr="Yacht Classique à Fond de Verre" data-de="Klassische Yacht mit Glasboden">Classic Glass-Bottom Yacht</option>
+              <option data-en="Luxury Yacht No.1" data-fr="Yacht de Luxe n°1" data-de="Luxusyacht Nr. 1">Luxury Yacht No.1</option>
+              <option data-en="Luxury Yacht No.2" data-fr="Yacht de Luxe n°2" data-de="Luxusyacht Nr. 2">Luxury Yacht No.2</option>
+<option data-en="Luxury Speedboat" data-fr="Hors-bord de Luxe" data-de="Luxus-Schnellboot">Luxury Speedboat</option>
+ <option data-en="Mid-Size Speedboat" data-fr="Hors-bord de Taille Moyenne" data-de="Mittelgroßes Schnellboot">Mid-Size Speedboat</option>
+<option data-en="Large Yacht" data-fr="Grand Yacht" data-de="Große Yacht">Large Yacht</option>
+<option data-en="Pirate Ship" data-fr="Navire Pirate" data-de="Piratenschiff">Pirate Ship</option>
+              <option data-en="Not decided yet — I need more advice" data-fr="Pas encore décidé — j'ai besoin de conseils" data-de="Noch unentschieden — ich brauche mehr Beratung">Not decided yet — I need more advice</option>
+            </select>
+          </div>
+
+          <div class="field">
+  <label for="trip_duration" data-en="Trip type" data-fr="Type d'excursion" data-de="Ausflugsart">Trip type</label>
+  <select id="trip_duration" name="trip_duration">
+    <option value="" data-en="Please select" data-fr="Veuillez choisir" data-de="Bitte wählen">Please select</option>
+    <option value="full_day" data-en="Full-day private charter" data-fr="Location privée journée complète" data-de="Private Charter ganzer Tag">Full-day private charter</option>
+    <option value="half_day_am" data-en="Half-day charter (morning, departs 9am)" data-fr="Location demi-journée (matin, départ 9h)" data-de="Halbtages-Charter (morgens, Abfahrt 9 Uhr)">Half-day charter (morning, departs 9am)</option>
+    <option value="half-day_pm" data-en="Half-day charter (afternoon, departs 1pm)" data-fr="Location demi-journée (après-midi, départ 13h)" data-de="Halbtages-Charter (nachmittags, Abfahrt 13 Uhr)">Half-day charter (afternoon, departs 1pm)</option>
+  </select>
+</div>
+
+<div class="field">
+  <label for="transfer" data-en="Would you like a marina transfer? If so, please give your hotel location (guide prices: city area USD 10 / 4-seat car, USD 30 / minibus; outer area (castle hotels / El-Gouna / Makadi / AMC hotels etc.): USD 45 per vehicle; Soma Bay area (Kempinski etc.): USD 55 per vehicle)" data-fr="Souhaitez-vous un transfert depuis la marina ? Si oui, indiquez la localisation de votre hôtel (prix indicatifs : centre-ville 10 USD / voiture 4 places, 30 USD / minibus ; zone périphérique (hôtels-châteaux / El-Gouna / Makadi / AMC, etc.) : 45 USD par véhicule ; zone de Soma Bay (Kempinski, etc.) : 55 USD par véhicule)" data-de="Möchten Sie einen Transfer von der Marina? Wenn ja, geben Sie bitte Ihren Hotelstandort an (Richtpreise: Stadtgebiet 10 USD / 4-Sitzer, 30 USD / Kleinbus; Außenbereich (Schlosshotels / El-Gouna / Makadi / AMC-Hotels usw.): 45 USD pro Fahrzeug; Soma-Bay-Gebiet (Kempinski usw.): 55 USD pro Fahrzeug)">Would you like a marina transfer? If so, please give your hotel location (guide prices: city area USD 10 / 4-seat car, USD 30 / minibus; outer area (castle hotels / El-Gouna / Makadi / AMC hotels etc.): USD 45 per vehicle; Soma Bay area (Kempinski etc.): USD 55 per vehicle)</label>
+  <select id="transfer" name="transfer">
+    <option value="" data-en="Please select" data-fr="Veuillez choisir" data-de="Bitte wählen">Please select</option>
+    <option value="yes" data-en="Yes, I need a hotel transfer" data-fr="Oui, j'ai besoin d'un transfert depuis l'hôtel" data-de="Ja, ich brauche einen Hoteltransfer">Yes, I need a hotel transfer</option>
+    <option value="no" data-en="No, I will make my own way to the marina" data-fr="Non, je me rendrai moi-même à la marina" data-de="Nein, ich komme selbst zur Marina">No, I will make my own way to the marina</option>
+  </select>
+</div>
+
+<div class="field">
+  <label for="hotel_address" data-en="Hotel location (fill in if you need a transfer)" data-fr="Localisation de l'hôtel (à remplir si vous souhaitez un transfert)" data-de="Hotelstandort (ausfüllen, falls Sie einen Transfer benötigen)">Hotel location (fill in if you need a transfer)</label>
+  <input id="hotel_address" name="hotel_address" type="text" data-en-ph="Hotel name or address" data-fr-ph="Nom ou adresse de l'hôtel" data-de-ph="Hotelname oder Adresse" placeholder="Hotel name or address">
+</div>
+
+
+          <div class="field">
+            <label for="message" data-en="Notes (optional)" data-fr="Remarques (facultatif)" data-de="Anmerkungen (optional)">Notes (optional)</label>
+            <textarea id="message" name="message" rows="4" data-en-ph="e.g. we'd prefer snorkelling + fishing, and we have elderly guests and children." data-fr-ph="ex. nous préférons snorkeling + pêche, et nous avons des personnes âgées et des enfants." data-de-ph="z. B. wir bevorzugen Schnorcheln + Angeln und haben ältere Gäste und Kinder." placeholder="e.g. we'd prefer snorkelling + fishing, and we have elderly guests and children."></textarea>
+          </div>
+
+<input type="hidden" name="_gotcha" style="display:none">
+
+          <button type="submit" class="btn btn-primary btn-block" data-en="Submit booking and wait to be contacted" data-fr="Envoyer la réservation et attendre le contact" data-de="Buchung absenden und auf Kontakt warten">Submit booking and wait to be contacted</button>
+          <p class="form-hint" id="formHint" role="status"></p>
+
+        </form>
+      </div>
+
+      <!-- 侧栏 -->
+      <aside class="contact-aside reveal">
+        <h3 data-en="Other ways to reach us" data-fr="Autres moyens de nous joindre" data-de="Weitere Möglichkeiten, uns zu erreichen">Other ways to reach us</h3>
+        <ul>
+          <li><span class="ic">📧</span><div><b data-en="Email" data-fr="E-mail" data-de="E-Mail">Email</b><br/>wangsaihui888@163.com</div></li>
+          
+          <li><span class="ic">🕙</span><div><b data-en="Service hours" data-fr="Heures d'ouverture" data-de="Servicezeiten">Service hours</b><br/><span data-en="Usually 11:00 – 2:00 (Egypt time)" data-fr="Généralement 11h00 – 2h00 (heure d'Égypte)" data-de="In der Regel 11:00 – 2:00 Uhr (ägyptische Zeit)">Usually 11:00 – 2:00 (Egypt time)</span></div></li>
+        </ul>
+        <p style="margin-top:18px;font-size:13px;color:#9fb8c6" data-en="We will reply as soon as we can. During public holidays we recommend booking at least 3 days in advance." data-fr="Nous vous répondrons dès que possible. Pendant les jours fériés, nous recommandons de réserver au moins 3 jours à l'avance." data-de="Wir antworten so schnell wie möglich. An Feiertagen empfehlen wir eine Buchung mindestens 3 Tage im Voraus.">We will reply as soon as we can. During public holidays we recommend booking at least 3 days in advance.</p>
+      </aside>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="brand-name" data-en="Red Sea Voyages" data-fr="Croisières Mer Rouge" data-de="Rotes Meer Fahrten">Red Sea Voyages</span></a>
+        <p data-en="Your private boat charter concierge in Hurghada, Egypt. We showcase the fleet, advise on itineraries and connect you with quotes — all trips are operated by licensed local boat owners." data-fr="Votre conciergerie de location de bateau privé à Hurghada, Égypte. Nous présentons la flotte, conseillons sur les itinéraires et vous mettons en relation avec les devis — toutes les sorties sont opérées par des propriétaires de bateaux locaux licenciés." data-de="Ihr Concierge für private Bootscharter in Hurghada, Ägypten. Wir präsentieren die Flotte, beraten zu Routen und vermitteln Angebote — alle Ausflüge werden von lizenzierten lokalen Bootsbesitzern durchgeführt.">Your private boat charter concierge in Hurghada, Egypt. We showcase the fleet, advise on itineraries and connect you with quotes — all trips are operated by licensed local boat owners.</p>
+      </div>
+      <div class="footer-col"><h4 data-en="Explore" data-fr="Explorer" data-de="Entdecken">Explore</h4><a href="boats.html" data-en="Our Yachts" data-fr="Nos Yachts" data-de="Unsere Yachten">Our Yachts</a><a href="boat-detail.html" data-en="Yacht Details" data-fr="Détails des Yachts" data-de="Yacht-Details">Yacht Details</a><a href="tips.html" data-en="Red Sea Insider Tips" data-fr="Conseils Mer Rouge" data-de="Rotes Meer Tipps">Red Sea Insider Tips</a></div>
+      <div class="footer-col"><h4 data-en="Services" data-fr="Services" data-de="Services">Services</h4><a href="contact.html" data-en="Contact & Booking" data-fr="Contact & Réservation" data-de="Kontakt & Buchung">Contact & Booking</a><a href="index.html#process" data-en="How It Works" data-fr="Comment Ça Marche" data-de="So Funktioniert Es">How It Works</a><a href="index.html#about" data-en="About Us" data-fr="À Propos" data-de="Über Uns">About Us</a></div>
+      <div class="footer-col"><h4 data-en="Legal" data-fr="Mentions Légales" data-de="Rechtliches">Legal</h4><a href="disclaimer.html" data-en="Booking Policy" data-fr="Conditions de Réservation" data-de="Buchungsbedingungen">Booking Policy</a><a href="disclaimer.html#privacy" data-en="Privacy Notice" data-fr="Confidentialité" data-de="Datenschutz">Privacy Notice</a><a href="contact.html" data-en="Contact Us" data-fr="Contactez-Nous" data-de="Kontaktieren Sie Uns">Contact Us</a></div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span id="year">2026</span> <span data-en="Red Sea Voyages. All rights reserved." data-fr="Croisières Mer Rouge. Tous droits réservés." data-de="Rotes Meer Fahrten. Alle Rechte vorbehalten.">Red Sea Voyages. All rights reserved.</span></p>
+      <p data-en="This website is an information and booking enquiry platform. All quotes are subject to personal confirmation." data-fr="Ce site est une plateforme d'information et de demande de réservation. Tous les devis sont soumis à confirmation personnelle." data-de="Diese Website ist eine Informations- und Anfrageplattform. Alle Angebote bedürfen der persönlichen Bestätigung.">This website is an information and booking enquiry platform. All quotes are subject to personal confirmation.</p>
+    </div>
+  </footer>
+  <script src="assets/js/main.js"></script>
+
+<script>
+(function () {
+  var btn = document.getElementById('langToggle');
+  if (!btn) return;
+  var langs = ['en', 'fr', 'de'];
+  var idx = 0;
+  function apply(l) {
+    document.documentElement.lang = l;
+    var nodes = document.querySelectorAll('[data-en], [data-fr], [data-de]');
+    for (var i = 0; i < nodes.length; i++) {
+      var el = nodes[i];
+      var v = el.getAttribute('data-' + l);
+      if (v == null) continue;
+      el.innerHTML = v;
+    }
+    var phs = document.querySelectorAll('[data-en-ph]');
+    for (var j = 0; j < phs.length; j++) {
+      var ph = phs[j].getAttribute('data-' + l + '-ph');
+      if (ph) phs[j].setAttribute('placeholder', ph);
+    }
+  }
+  function label() {
+    var cur = langs[idx].toUpperCase();
+    var rest = langs.filter(function (x) { return x !== langs[idx]; }).map(function (x) { return x.toUpperCase(); });
+    return cur + ' · ' + rest.join(' · ');
+  }
+  btn.addEventListener('click', function () {
+    idx = (idx + 1) % langs.length;
+    apply(langs[idx]);
+    btn.textContent = label();
+  });
+})();
+</script>
+
+</body>
+</html>
